@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5LmUc3zKyOvlh/M2Lrn9pw6AOYFz8Riw/K3UrUFEqhU=",
+  "Source": "BookSite.Web",
+  "BasePath": "_content/BookSite.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

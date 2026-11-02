@@ -1,0 +1,11 @@
+/home/homedragon/Projects/BookWebsite/BookSite.Data/bin/Debug/net8.0/BookSite.Data.deps.json
+/home/homedragon/Projects/BookWebsite/BookSite.Data/bin/Debug/net8.0/BookSite.Data.dll
+/home/homedragon/Projects/BookWebsite/BookSite.Data/bin/Debug/net8.0/BookSite.Data.pdb
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/BookSite.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/BookSite.Data.AssemblyInfoInputs.cache
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/BookSite.Data.AssemblyInfo.cs
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/BookSite.Data.csproj.CoreCompileInputs.cache
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/BookSite.Data.dll
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/refint/BookSite.Data.dll
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/BookSite.Data.pdb
+/home/homedragon/Projects/BookWebsite/BookSite.Data/obj/Debug/net8.0/ref/BookSite.Data.dll
