@@ -9,3 +9,7 @@
 /home/homedragon/Projects/BookWebsite/BookSite.Services/obj/Debug/net8.0/refint/BookSite.Services.dll
 /home/homedragon/Projects/BookWebsite/BookSite.Services/obj/Debug/net8.0/BookSite.Services.pdb
 /home/homedragon/Projects/BookWebsite/BookSite.Services/obj/Debug/net8.0/ref/BookSite.Services.dll
+/home/homedragon/Projects/BookWebsite/BookSite.Services/bin/Debug/net8.0/BookSite.Data.dll
+/home/homedragon/Projects/BookWebsite/BookSite.Services/bin/Debug/net8.0/BookSite.Data.pdb
+/home/homedragon/Projects/BookWebsite/BookSite.Services/obj/Debug/net8.0/BookSite.Services.csproj.AssemblyReference.cache
+/home/homedragon/Projects/BookWebsite/BookSite.Services/obj/Debug/net8.0/BookSite.5F177EDC.Up2Date
