@@ -18,15 +18,24 @@
     };
   };
   # devenv.sh/services/
-services = {
+  services = {
     # devenv.sh/services/postgres/
     postgres = {
       enable = true;
       port = 5432;
-      initialDatabases = [{ name = "booksite.dev"; }];
+      initialDatabases =
+      [{
+        name = "booksite.dev";
+        user = "booksite";
+        pass = "emerson";
+      }];
+      listen_addresses = "127.0.0.1";
     };
- 
+
   };
-  packages = [ pkgs.omnisharp-roslyn pkgs.dotnet-ef ];
+  packages = [
+    pkgs.omnisharp-roslyn
+    pkgs.dotnet-ef
+  ];
   # See full reference at https://devenv.sh/reference/options/
 }

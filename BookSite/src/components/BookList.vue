@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-  import type {Task} from "../types.ts";
+  import type {Book} from "../types.ts";
 
   const props = defineProps <
-    {tasks: Task[]}
+    {books: Book[]}
     > ();
 
   const emits = defineEmits
     <
   {
     toggleDone: [id: string];
-    removeTask: [id: string];
+    removeBook: [id: string];
   }
     > ();
 
@@ -17,13 +17,13 @@
 
 
 <template>
-  <TransitionGroup class="task-list" name="list" tag="div">
-    <article class="task" v-for="task in props.tasks" :key="task.id">
+  <TransitionGroup class="book-list" name="list" tag="div">
+    <article class="book" v-for="book in props.books" :key="book.id">
       <label>
-        <input @input="emits('toggleDone', task.id)" :checked="task.done" type="checkbox">
-        <span :class="{done:task.done}">{{ task.title }}</span>
+        <input @input="emits('toggleDone', book.id)" :checked="book.done" type="checkbox">
+        <span :class="{done:book.done}">{{ book.title }} by {{ book.author }}</span>
       </label>
-      <button class="outline" @click="emits('removeTask', task.id)">
+      <button class="outline" @click="emits('removeBook', book.id)">
         Remove
       </button>
     </article>
@@ -37,7 +37,7 @@
     text-decoration: line-through;
   }
 
-  .task {
+  .book {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,9 +4,9 @@ namespace BookSite.Services
 {
     public interface IBookService
     {
-		public List<Book> GetAllBooks();
-        public Book GetBook(int bookId);
-        public void AddBook(Book book);
-        public void DeleteBook(int bookId);
+		public Task<List<Book>> GetAllBooks();
+        public Task<Book> GetBook(int bookId);
+        public Task<Book> AddBook(Book book);
+        public Task DeleteBook(int bookId);
     }
 }

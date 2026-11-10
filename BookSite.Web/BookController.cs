@@ -17,24 +17,46 @@ public class BooksController : ControllerBase {
     }
 
     [HttpGet("/api/books")]
-    public ActionResult GetBooks() {
-        var books = _bookService.GetAllBooks();
+    public async Task<ActionResult> GetBooksAsync() {
+        var books = await _bookService.GetAllBooks();
         return Ok(books);
     }
 
+
+    [HttpGet("/api/books/{id}")]
+    public async Task<ActionResult> GetBook(int id)
+    {
+        var book = await _bookService.GetBook(id);
+
+        return Ok(book);
+    }
+
     [HttpPost("/api/books")]
-    public ActionResult CreateBook([FromBody] NewBookRequest bookRequest) {
+    public async Task<ActionResult> CreateBookAsync([FromBody] NewBookRequest bookRequest) {
+        if(!ModelState.IsValid)
+        {
+            return BadRequest("ModelState is not valid");
+        }
         var now = DateTime.UtcNow;
 
         var book = new Book {
             CreatedOn = now,
             UpdatedOn = now,
-            Title = bookRequest.Title,
-            Author = bookRequest.Author
+            Title = bookRequest.Title ?? "Unknown Title",
+            Author = bookRequest.Author ?? "Unknown Author"
         };
 
-        _bookService.AddBook(book);
+        var addedBook = await _bookService.AddBook(book);
 
-        return Ok($"Book created: {book.Title}");
+        return Ok(addedBook);
+    }
+
+
+    [HttpDelete("/api/books/{id}")]
+    public async Task<ActionResult> DeleteBookAsync(int id)
+    {
+        await _bookService.DeleteBook(id);
+
+        return Ok($"Book deleted with id: {id}");
     }
 }

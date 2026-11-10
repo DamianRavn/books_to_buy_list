@@ -1,8 +1,11 @@
-export interface Task
+export interface Book
 {
-  id: string;
+  id: number;
   title: string;
+  author: string;
   done: boolean;
+  createdOn: string;
+  updatedOn: string;
 }
 
-export type TaskFilter = "all"|"todo"|"done";
+export type BookFilter = "all"|"todo"|"done";

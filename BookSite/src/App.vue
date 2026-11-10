@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld2 from './components/HelloWorld2.vue'
+import BookComponent from './components/BookComponent.vue'
 </script>
 
 <template>
-  <HelloWorld2 />
+  <BookComponent />
 </template>
